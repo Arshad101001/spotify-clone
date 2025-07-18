@@ -26,4 +26,4 @@ Welcome to the **Spotify Clone Project** — a basic and elegant application tha
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/cool-papa2/spotify-clone.git
+https://github.com/Arshad101001/spotify-clone.git
