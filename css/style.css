@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --a: 0;
 }
 
@@ -121,7 +121,7 @@ body {
     transition: all 0.2s;
 }
 
-.card:hover{
+.card:hover {
     background-color: #302f2f;
     cursor: pointer;
     --a: 1;
@@ -139,7 +139,7 @@ body {
 .play {
     padding: 0;
     position: absolute;
-    top: 165px;
+    bottom: 100px;
     right: 15px;
     opacity: var(--a);
     transition: all 0.3s ease-in-out;
@@ -227,7 +227,7 @@ body {
     cursor: pointer;
 }
 
-.range input{
+.range input {
     cursor: pointer;
 }
 
@@ -236,16 +236,16 @@ body {
     content: "asdas";
 } */
 
-#previous{
-    cursor: pointer;    
+#previous {
+    cursor: pointer;
 }
 
-#next{
-    cursor: pointer;    
+#next {
+    cursor: pointer;
 }
 
-#play{
-    cursor: pointer;    
+#play {
+    cursor: pointer;
 }
 
 .seekbar {
@@ -390,7 +390,7 @@ body {
 }
 
 @media (max-width: 450px) {
-    .card{
+    .card {
         width: 88vw;
     }
 }
