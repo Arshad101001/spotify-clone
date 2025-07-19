@@ -26,4 +26,10 @@ Welcome to the **Spotify Clone Project** — a basic and elegant application tha
 ### 1. Clone the Repository
 
 ```bash
-https://github.com/Arshad101001/spotify-clone.git
+https://github.com/Arshad101001/spotify-clone.git 
+```
+
+### 2. Open live server and and copy the port no. and paste it in the `script.js` file line no. 4
+
+### 3. Run `index.html` file in the browser.
+
