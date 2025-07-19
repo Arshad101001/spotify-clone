@@ -1,6 +1,7 @@
 console.log('javaScript is inserted in the file');
 let currentSong = new Audio();
 
+let server = 'http://127.0.0.1:3000'
 let songs;
 let currFolder;
 
@@ -23,7 +24,7 @@ async function getSongs(folder) {
     currFolder = folder;
 
     // fetching all the songs from the folder 
-    let a = await fetch(`http://127.0.0.1:3000/spotify-clone/${folder}/`)
+    let a = await fetch(`${server}/spotify-clone/${folder}/`)
     // console.log(folder);
     
     let response = await a.text()
@@ -98,7 +99,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`http://127.0.0.1:3000/spotify-clone/songs/`)
+    let a = await fetch(`${server}/spotify-clone/songs/`)
     let response = await a.text()
 
     let div = document.createElement("div");
@@ -113,7 +114,7 @@ async function displayAlbums() {
             let folder = e.href.split("/").slice(-2)[0];
             // Get the metadata of the folder
 
-            let a = await fetch(`http://127.0.0.1:3000/spotify-clone/songs/${folder}/info.json`)
+            let a = await fetch(`${server}/spotify-clone/songs/${folder}/info.json`)
             let response = await a.json()
             // console.log(response);
 
